@@ -11,7 +11,7 @@ import {
 import { Add } from '@mui/icons-material';
 import ArtistCard from '../components/ArtistCard';
 import SearchAndSort from '../components/SearchAndSort';
-import { Artist } from '../types/artist';
+import type { Artist } from '../types/artist';
 import { artistService } from '../services/supabase';
 
 const HomePage: React.FC = () => {

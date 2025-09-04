@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Container, Typography, Box, CircularProgress, Alert } from '@mui/material';
 import ArtistForm from '../components/ArtistForm';
-import { Artist, CreateArtistData } from '../types/artist';
+import type { Artist, CreateArtistData } from '../types/artist';
 import { artistService } from '../services/supabase';
 
 const EditArtistPage: React.FC = () => {

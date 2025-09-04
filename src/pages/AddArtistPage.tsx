@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Container, Typography, Box, Alert, Snackbar } from '@mui/material';
 import ArtistForm from '../components/ArtistForm';
-import { CreateArtistData } from '../types/artist';
+import type { CreateArtistData } from '../types/artist';
 import { artistService } from '../services/supabase';
 
 const AddArtistPage: React.FC = () => {

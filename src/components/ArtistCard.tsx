@@ -9,7 +9,7 @@ import {
   Tooltip
 } from '@mui/material';
 import { Edit, Instagram, Telegram, Email, Phone } from '@mui/icons-material';
-import { Artist } from '../types/artist';
+import type { Artist } from '../types/artist';
 
 interface ArtistCardProps {
   artist: Artist;

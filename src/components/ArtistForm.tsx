@@ -7,7 +7,7 @@ import {
   Typography
 } from '@mui/material';
 import { Save } from '@mui/icons-material';
-import { Artist, CreateArtistData } from '../types/artist';
+import type { Artist, CreateArtistData } from '../types/artist';
 
 interface ArtistFormProps {
   artist?: Artist;
