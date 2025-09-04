@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { Container, Typography, Box, CircularProgress, Alert } from '@mui/material';
 import ArtistForm from '../components/ArtistForm';
-import { Artist, CreateArtistData } from '../types/artist.js';
+import { Artist, CreateArtistData } from '../types/artist';
 import { artistService } from '../services/supabase';
 
 const EditArtistPage: React.FC = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
-  const location = useLocation();
   const [artist, setArtist] = useState<Artist | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

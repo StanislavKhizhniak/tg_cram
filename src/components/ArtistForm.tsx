@@ -7,7 +7,7 @@ import {
   Typography
 } from '@mui/material';
 import { Save } from '@mui/icons-material';
-import { Artist, CreateArtistData } from '../types/artist.js';
+import { Artist, CreateArtistData } from '../types/artist';
 
 interface ArtistFormProps {
   artist?: Artist;
@@ -94,9 +94,9 @@ const ArtistForm: React.FC<ArtistFormProps> = ({
   };
 
   const handleChange = (field: keyof CreateArtistData, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev: CreateArtistData) => ({ ...prev, [field]: value }));
     if (errors[field]) {
-      setErrors(prev => ({ ...prev, [field]: undefined }));
+      setErrors((prev: Partial<CreateArtistData>) => ({ ...prev, [field]: undefined }));
     }
   };
 

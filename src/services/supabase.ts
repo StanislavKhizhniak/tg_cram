@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
-import { Artist, CreateArtistData } from '../types/artist.js';
+import { Artist, CreateArtistData } from '../types/artist';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
